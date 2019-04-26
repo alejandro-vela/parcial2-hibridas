@@ -1,0 +1,40 @@
+items: any;
+    items=[
+            {
+                titulo:"IMAC 12",
+                img:"../assets/grand/grand1.jpeg",
+                descri:" IMAC12 , PANTALLA SENCILLA , COREI3, 4GB RAM , USADO",
+                valor:"2'500.000"
+            },
+            {
+                titulo:"IMAC  13 ",
+                img:"assets/grand/grand2.jpg",
+                descri:"IMAC13 , PANTALLA RETINA , DISCO SOLIDO 500GB ,8GB RAM , CORE I3,USADO",
+                valor:"2'700.000"
+
+            },
+            {
+                titulo:"IMAC 14",
+                img: "assets/grand/grand3.jpg",
+                descri:"IMAC 2014, PANTALLA SENCILLA , DISCO FLASH 120GB  ,NUEVO",
+                valor:"3'000.000"
+            },
+            {
+                titulo:"IMAC 15",
+                img: "assets/grand/grand4.jpg",
+                descri:"IMAC 2015 , PANTALLA RETINA , MEMORIA FLASH 120GB  , NUEVO",
+                valor:"3'500.000"
+            },
+            {
+                titulo:" IMAC 18",
+                img: "assets/grand/grand5.jpg",
+                descri:"IMAC 2018 , MEMORIA FLASH 120GB  , PANEL TACTIL , HUELLA , EDITION ROSE , SILVER, NUEVO ",
+                valor:"6'500.000"
+            },
+            {
+                titulo:"IMAC 2019 ",
+                img: "assets/grand/grand6.jpg",
+                descri:"IMAC 2019 , 256GB, 8GB RAM,CORE I9  , NUEVO ",
+                valor:"10'500.000",
+            }
+        ]

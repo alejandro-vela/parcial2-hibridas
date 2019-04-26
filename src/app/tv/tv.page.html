@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">Televisores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items">
+    <ion-card-header>
+      <ion-card-title>{{item.titulo}}</ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-img [src]="item.img" ></ion-img>
+      {{item.descri}}<br>
+      <h1>Valor:{{item.valor}}</h1>
+      <ion-button expand="full" (click)="dataType(item.id)" routerLink="/form"><ion-icon name="cart"></ion-icon></ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+    <ion-toolbar color="dark" style="text-align: center">
+        <ion-button id="idbotones" color="danger" shape="round" fill="clear" routerLink="/home">Inicio</ion-button>
+        <ion-button id="idbotones" color="danger" shape="round" fill="clear" routerLink="/cel">Cell</ion-button>
+        <ion-button id="idbotones" color="danger" shape="round" fill="clear" routerLink="/laptop">Laptop</ion-button>
+        <ion-button id="idbotones" color="danger" shape="round" fill="clear" routerLink="/pc">PC</ion-button>
+    </ion-toolbar>
+</ion-footer>

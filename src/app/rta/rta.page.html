@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title style="text-align: center">Detalles</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card *ngFor="let item of data">
+        <ion-card-header>
+            <ion-card-title>{{item.titulo}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-img [src]="item.img"></ion-img>
+            {{item.descri}}<br>
+            <h1>Valor:{{item.valor}}</h1>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Datos</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="person" item-start></ion-icon>
+                    <ion-label class="content" stacked>Nombres:{{input1}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="person" item-start></ion-icon>
+                    <ion-label class="content" stacked>Apellidos:{{input2}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="tv" item-start></ion-icon>
+                    <ion-label class="content" stacked>Documento:{{input3}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="browsers" item-start></ion-icon>
+                    <ion-label class="content" stacked>Direccion: {{input4}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="call" item-start></ion-icon>
+                    <ion-label class="content" stacked>Telefono:{{input5}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="compass" item-start></ion-icon>
+                    <ion-label class="content" stacked>Ciudad:{{input6}}</ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+    {{input7}}
+    <ion-button id="idbotones" color="success" expand="full" routerLink="/home">Seguir comprando</ion-button>
+</ion-content>

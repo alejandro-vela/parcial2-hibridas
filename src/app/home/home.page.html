@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">
+      HOME
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items">
+    <ion-card-header>
+      <ion-card-title>{{item.titulo}}</ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-img [src]="item.img" [routerLink]="item.url"></ion-img>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

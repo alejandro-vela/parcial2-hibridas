@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title style="text-align: center">Formulario</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-card-header>
+            <ion-card-title></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="person" item-start></ion-icon>
+                    <ion-label class="content" stacked>Nombres:</ion-label>
+                    <ion-input [(ngModel)]="name" type="text" placeholder="Nombre"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="person" item-start></ion-icon>
+                    <ion-label class="content" stacked>Apellidos:</ion-label>
+                    <ion-input [(ngModel)]="lastName" type="text" placeholder="Apellidos"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="tv" item-start></ion-icon>
+                    <ion-label class="content" stacked>Documento:</ion-label>
+                    <ion-input [(ngModel)]="Documento" type="text" placeholder="Documento"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="browsers" item-start></ion-icon>
+                    <ion-label class="content" stacked>Direccion:</ion-label>
+                    <ion-input [(ngModel)]="Direccion" type="text" placeholder="Direccion"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="call" item-start></ion-icon>
+                    <ion-label class="content" stacked>Telefono:</ion-label>
+                    <ion-input [(ngModel)]="Telefono" type="text" placeholder="Telefono"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="compass" item-start></ion-icon>
+                    <ion-label class="content" stacked>Ciudad:</ion-label>
+                    <ion-input [(ngModel)]="Ciudad" type="text" placeholder="Ciudad"></ion-input>
+                </ion-item>
+
+               <!-- <ion-select [interfaceOptions]="customAlertOptions" interface="action-sheet" multiple="false"
+                            placeholder="Selecciona uno" [(ngModel)]="id">
+                    <ion-select-option value="1 ">TV LG 50</ion-select-option>
+                    <ion-select-option value="2">TV LG 40</ion-select-option>
+                    <ion-select-option value="3">TV SAMSUNG 50</ion-select-option>
+                    <ion-select-option value="4">TV SAMSUNG 30</ion-select-option>
+                    <ion-select-option value="5">TV LG 20</ion-select-option>
+                    <ion-select-option value="6">TV CMD 20</ion-select-option>
+                    <ion-select-option>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</ion-select-option>
+                    <ion-select-option value="7">IPHONE 5S</ion-select-option>
+                    <ion-select-option value="8">IPHONE 6S</ion-select-option>
+                    <ion-select-option value="9">IPHONE 8</ion-select-option>
+                    <ion-select-option value="10">IPHONE XR</ion-select-option>
+                    <ion-select-option value="11">IPHONE X</ion-select-option>
+                    <ion-select-option value="12">IPHONE XS</ion-select-option>
+                    <ion-select-option>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</ion-select-option>
+                    <ion-select-option value="13">MACKBOOK AIR 12</ion-select-option>
+                    <ion-select-option value="14">MACKBOOK PRO 12</ion-select-option>
+                    <ion-select-option value="15">MACKBOOK AIR 14</ion-select-option>
+                    <ion-select-option value="16">MACKBOOK PRO 14</ion-select-option>
+                    <ion-select-option value="17">MACKBOOK AIR 2019</ion-select-option>
+                    <ion-select-option value="18">MACKBOOK PRO 2019 </ion-select-option>
+                    <ion-select-option>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</ion-select-option>
+                    <ion-select-option value="20">IMAC 12</ion-select-option>
+                    <ion-select-option value="21">IMAC 13 </ion-select-option>
+                    <ion-select-option value="22">IMAC 14</ion-select-option>
+                    <ion-select-option value="23">IMAC 15</ion-select-option>
+                    <ion-select-option value="24">IMAC 18</ion-select-option>
+                    <ion-select-option value="25">IMAC 2019 </ion-select-option>
+                </ion-select>-->
+
+                <ion-button expand="full" (click)="enviar1()">Enviar 2</ion-button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-footer>
+    <ion-toolbar style="text-align: center">
+        <ion-button shape="round" routerLink="/home">Inicio</ion-button>
+    </ion-toolbar>
+    {{id}}
+</ion-footer>
